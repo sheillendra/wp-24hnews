@@ -103,10 +103,10 @@
             <div class="container">
                 <!-- Begin .header-logo -->
                 <div class="header-logo">
-                    <a href="index-2.html">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Site Logo" />
-                        <h1>Tribrata<span>News</span></h1>
-                        <h4>Polres Pohuwato</h4>
+                    <a href="<?php echo home_url()?>">
+                        <img src="<?php echo get_bloginfo('logo') ?>" alt="Site Logo" />
+                        <h1><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h1>
+                        <h4><?php echo get_bloginfo('description')?></h4>
                     </a>
                 </div>
                 <!-- End .header-logo -->
@@ -130,8 +130,8 @@
                         <div class="sidenav-header-logo">
                             <a href="index-2.html">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Site Logo" />
-                                <h2>24h <span>News</span></h2>
-                                <h5>Your 24h News Source</h5>
+                                <h2><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h2>
+                                <h5><?php echo get_bloginfo('description')?></h5>
                             </a>
                         </div>
                     </div>
@@ -145,8 +145,8 @@
                             <div class="sidenav-header-logo">
                                 <a href="index-2.html">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Site Logo" />
-                                    <h2>24h <span>News</span></h2>
-                                    <h5>Your 24h News Source</h5>
+                                    <h2><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h2>
+                                    <h5><?php echo get_bloginfo('description')?></h5>
                                 </a>
                             </div>
                         </div>

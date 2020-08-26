@@ -27,9 +27,9 @@
                                         We know ... easier said than done. </p>
                                     <div class="site-logo">
                                         <a href="index-2.html">
-                                            <img src="img/logo.png" alt="Side Logo" />
-                                            <h3>24h <span>News</span></h3>
-                                            <p>Your 24h News Source</p>
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Side Logo" />
+                                            <h3><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h3>
+                                            <p><?php echo get_bloginfo('description')?></p>
                                         </a>
                                     </div>
                                 </div>
