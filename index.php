@@ -80,7 +80,7 @@
 								<span class="category-tag bg-1">Around the World</span>
 								<p>New global rules on firms' tax disclosure urged by economists</p>
 							</div>
-							<img src="img/index_slider-image01.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image01.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer second">
@@ -89,7 +89,7 @@
 								<span class="category-tag bg-6">Politics</span>
 								<p>How EU referendum has changed politics, whatever the result</p>
 							</div>
-							<img src="img/index_slider-image02.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image02.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer third">
@@ -98,7 +98,7 @@
 								<span class="category-tag bg-4">Sport News</span>
 								<p>Tour de France Countdown: Race preview</p>
 							</div>
-							<img src="img/index_slider-image03.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image03.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer fourth">
@@ -107,7 +107,7 @@
 								<span class="category-tag bg-2">Travel</span>
 								<p>Get the latest travel news and train times</p>
 							</div>
-							<img src="img/index_slider-image04.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image04.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 								<span class="category-tag bg-1">Technology</span>
 								<p>J. Stone interview: a manifesto for involving citizens in science</p>
 							</div>
-							<img src="img/index_slider-image05.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image05.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer second">
@@ -127,7 +127,7 @@
 								<span class="category-tag bg-6">Lifestyle</span>
 								<p>Feelgood fashion: clothes that enhance your mood</p>
 							</div>
-							<img src="img/index_slider-image06.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image06.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer third">
@@ -136,7 +136,7 @@
 								<span class="category-tag bg-4">Headlines</span>
 								<p>A woman is in a process to adopt a Haitian girl</p>
 							</div>
-							<img src="img/index_slider-image07.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image07.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer fourth">
@@ -145,7 +145,7 @@
 								<span class="category-tag bg-2">Environment</span>
 								<p>Breakfast is an increasingly tasty strategy for restaurant industry</p>
 							</div>
-							<img src="img/index_slider-image08.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image08.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -156,7 +156,7 @@
 								<span class="category-tag bg-1">Breaking News</span>
 								<p>The police responded to a protest in downtown</p>
 							</div>
-							<img src="img/index_slider-image09.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image09.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer second">
@@ -165,7 +165,7 @@
 								<span class="category-tag bg-6">Politics</span>
 								<p>The EU refugee and migration policy is not working</p>
 							</div>
-							<img src="img/index_slider-image10.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image10.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer third">
@@ -174,7 +174,7 @@
 								<span class="category-tag bg-4">Soccer News</span>
 								<p>Live match reports and latest scores</p>
 							</div>
-							<img src="img/index_slider-image11.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image11.jpg" alt="">
 						</a>
 					</div>
 					<div class="news-slider-layer fourth">
@@ -183,7 +183,7 @@
 								<span class="category-tag bg-2">Health</span>
 								<p>Food & Nutrition | Healthy Dinner Recipes | Healthy Desserts</p>
 							</div>
-							<img src="img/index_slider-image12.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/index_slider-image12.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -209,7 +209,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image01.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image01.jpg" alt="">
 								</a>
 								<span><a class="label-1" href="news.html">News</a></span>
 							</div>
@@ -229,7 +229,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image02.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image02.jpg" alt="">
 								</a>
 								<span><a class="label-3" href="politics.html">Politics</a></span>
 							</div>
@@ -257,7 +257,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image03.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image03.jpg" alt="">
 								</a>
 								<span><a class="label-5" href="tech-science.html">Science</a></span>
 							</div>
@@ -277,7 +277,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image04.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image04.jpg" alt="">
 								</a>
 								<span><a class="label-2" href="health.html">Health</a></span>
 							</div>
@@ -317,7 +317,7 @@
 						<div class="item">
 							<div class="item-image-2">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image05.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image05.jpg" alt="">
 								</a>
 								<span><a class="label-2" href="politics.html">Politics</a></span>
 							</div>
@@ -337,7 +337,7 @@
 						<div class="item">
 							<div class="item-image-2">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image06.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image06.jpg" alt="">
 								</a>
 								<span><a class="label-1" href="news.html">News</a></span>
 							</div>
@@ -357,7 +357,7 @@
 						<div class="item">
 							<div class="item-image-2">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image07.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image07.jpg" alt="">
 								</a>
 								<span><a class="label-5" href="business.html">Economy</a></span>
 							</div>
@@ -377,7 +377,7 @@
 						<div class="item">
 							<div class="item-image-2">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image08.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image08.jpg" alt="">
 								</a>
 								<a class="label-6" href="business.html">Business</a>
 							</div>
@@ -402,7 +402,7 @@
 					<!-- Begin .sidebar-add-place -->
 					<div class="sidebar-add-place">
 						<a href="https://themeforest.net/item/24h-news-broadcast-news-tv-channel-news-magazine-template/18614179" target="_blank">
-							<img src="img/banner_400x270.jpg" alt="">
+							<img src="http://localhost/templates/24hNews/img/banner_400x270.jpg" alt="">
 						</a>
 					</div>
 					<!-- End .sidebar-add-place -->
@@ -420,7 +420,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image01.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image01.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -433,7 +433,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image02.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image02.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -446,7 +446,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image03.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image03.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -459,7 +459,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image04.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image04.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -472,7 +472,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image05.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image05.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -485,7 +485,7 @@
 									<div class="item">
 										<div class="item-image">
 											<a class="img-link" href="#">
-												<img class="img-responsive img-full" src="img/index_370x185-image06.jpg" alt="">
+												<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image06.jpg" alt="">
 											</a>
 										</div>
 										<div class="item-content">
@@ -516,7 +516,7 @@
 				</div>
 				<h4><a class="show-info-button bg-1" href="#"> Watch the final presidential debate, moderated by Neal Bailey, Tonight at 10 </a></h4>
 				<div class="figure">
-					<img src="img/schedule_figure.png" alt="">
+					<img src="http://localhost/templates/24hNews/img/schedule_figure.png" alt="">
 				</div>
 			</div>
 			<div class="schedule-squares">
@@ -670,7 +670,7 @@
 								<div class="item">
 									<div class="item-image-3">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_800x400-image09.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image09.jpg" alt="">
 										</a>
 										<span><a class="label-1" href="news.html">Breaking News</a></span>
 									</div>
@@ -687,7 +687,7 @@
 								<div class="item">
 									<div class="item-image-3">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_800x400-image10.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image10.jpg" alt="">
 										</a>
 										<span><a class="label-4" href="travel.html">Sport</a></span>
 									</div>
@@ -704,7 +704,7 @@
 								<div class="item">
 									<div class="item-image-3">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_800x400-image11.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image11.jpg" alt="">
 										</a>
 										<span><a class="label-9" href="soccer.html">Lifestyle</a></span>
 									</div>
@@ -721,7 +721,7 @@
 								<div class="item">
 									<div class="item-image-3">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_800x400-image12.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image12.jpg" alt="">
 										</a>
 										<span><a class="label-3" href="health.html">Travel</a></span>
 									</div>
@@ -738,7 +738,7 @@
 								<div class="item">
 									<div class="item-image-3">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_800x400-image13.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image13.jpg" alt="">
 										</a>
 										<span><a class="label-6" href="health.html">Web Shows</a></span>
 									</div>
@@ -774,7 +774,7 @@
 						<div class="item">
 							<div class="item-image-full">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image02.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image02.jpg" alt="">
 								</a>
 							</div>
 						</div>
@@ -788,7 +788,7 @@
 							<div class="item">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image40.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image40.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -817,7 +817,7 @@
 							<div class="item">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image41.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image41.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -830,7 +830,7 @@
 							<div class="item">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image42.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image42.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -866,7 +866,7 @@
 						<div class="item">
 							<div class="item-image-full">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image04.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image04.jpg" alt="">
 								</a>
 							</div>
 						</div>
@@ -945,7 +945,7 @@
 						<div class="item">
 							<div class="item-image">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_464x232-image01.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_464x232-image01.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -958,7 +958,7 @@
 						<div class="item">
 							<div class="item-image">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_464x232-image02.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_464x232-image02.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -971,7 +971,7 @@
 						<div class="item">
 							<div class="item-image">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_464x232-image03.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_464x232-image03.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -988,7 +988,7 @@
 				<div class="full-block-three-columns">
 					<div class="sidebar-add-place">
 						<a href="#" target="_blank">
-							<img class="img-responsive" src="img/banner_300x600.jpg" alt="">
+							<img class="img-responsive" src="http://localhost/templates/24hNews/img/banner_300x600.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -1012,7 +1012,7 @@
 	<!-- Begin .add-place -->
 	<div class="add-place">
 		<a href="https://themeforest.net/item/24h-news-broadcast-news-tv-channel-news-magazine-template/18614179" target="_blank">
-			<img src="img/banner_820x100.jpg" alt="">
+			<img src="http://localhost/templates/24hNews/img/banner_820x100.jpg" alt="">
 		</a>
 	</div>
 	<!-- End .add-place -->
@@ -1035,27 +1035,27 @@
 			<!-- Begin .gallery-slider owl-carousel -->
 			<div id="big-gallery-slider-3" class="owl-carousel">
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image01.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image01.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image02.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image02.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image03.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image03.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image04.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image04.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image05.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image05.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 				<div class="big-gallery">
-					<img src="img/index_slider-large-image06.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/index_slider-large-image06.jpg" alt="">
 					<a href="video.html"><span class="play-icon"></span></a>
 				</div>
 			</div>
@@ -1083,7 +1083,7 @@
 						<div class="item">
 							<div class="item-image-3">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image14.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image14.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1103,7 +1103,7 @@
 						<div class="item">
 							<div class="item-image-3">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image15.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image15.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1122,7 +1122,7 @@
 						<div class="item">
 							<div class="item-image-3">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image16.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image16.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1160,7 +1160,7 @@
 											<h4 class="sidebar-show-title bg-1">Around the World</h4>
 											<p>New global rules on firms' tax disclosure urged by economists</p>
 										</div>
-										<img src="img/sidebar-schedule_slider-image01.jpg" alt="">
+										<img src="http://localhost/templates/24hNews/img/sidebar-schedule_slider-image01.jpg" alt="">
 									</a>
 								</div>
 							</div>
@@ -1174,7 +1174,7 @@
 											<h4 class="sidebar-show-title bg-1">Sport Headlines</h4>
 											<p>All the latest sports news from around the world.</p>
 										</div>
-										<img src="img/sidebar-schedule_slider-image02.jpg" alt="">
+										<img src="http://localhost/templates/24hNews/img/sidebar-schedule_slider-image02.jpg" alt="">
 									</a>
 								</div>
 							</div>
@@ -1188,7 +1188,7 @@
 											<h4 class="sidebar-show-title bg-1">Happening Now</h4>
 											<p>Kerry Thomas will take you to news when and where it happens.</p>
 										</div>
-										<img src="img/sidebar-schedule_slider-image03.jpg" alt="">
+										<img src="http://localhost/templates/24hNews/img/sidebar-schedule_slider-image03.jpg" alt="">
 									</a>
 								</div>
 							</div>
@@ -1241,13 +1241,13 @@
 					</div>
 					<div class="module-media">
 						<div class="image">
-							<img class="img-responsive" src="img/index_620x465-image04.jpg" alt="">
+							<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_620x465-image04.jpg" alt="">
 						</div>
 						<a href="video.html"><span class="play-icon"></span></a>
 					</div>
 					<div class="module-media">
 						<div class="image">
-							<img class="img-responsive" src="img/index_620x465-image02.jpg" alt="">
+							<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_620x465-image02.jpg" alt="">
 						</div>
 						<a href="video.html"><span class="play-icon"></span></a>
 					</div>
@@ -1277,7 +1277,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image17.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image17.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1308,7 +1308,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image21.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image21.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1319,7 +1319,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image22.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image22.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1330,7 +1330,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image23.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image23.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1341,7 +1341,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image24.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image24.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1359,7 +1359,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image18.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image18.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1389,7 +1389,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image25.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image25.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1401,7 +1401,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image26.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image26.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1413,7 +1413,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image27.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image27.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1425,7 +1425,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image28.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image28.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1437,7 +1437,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image29.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image29.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1449,7 +1449,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image30.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image30.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1461,7 +1461,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image31.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image31.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1473,7 +1473,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image10.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image10.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1501,7 +1501,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image07.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image07.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1514,7 +1514,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image08.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image08.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1527,7 +1527,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image09.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image09.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1540,7 +1540,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image10.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image10.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1553,7 +1553,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image11.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image11.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1566,7 +1566,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image12.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image12.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1579,7 +1579,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image13.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image13.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1592,7 +1592,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image14.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image14.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1605,7 +1605,7 @@
 								<div class="item">
 									<div class="item-image">
 										<a class="img-link" href="#">
-											<img class="img-responsive img-full" src="img/index_370x185-image15.jpg" alt="">
+											<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_370x185-image15.jpg" alt="">
 										</a>
 									</div>
 									<div class="item-content">
@@ -1688,7 +1688,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image19.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image19.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1718,7 +1718,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image32.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image32.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1730,7 +1730,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image33.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image33.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1742,7 +1742,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image34.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image34.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1754,7 +1754,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image35.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image35.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1772,7 +1772,7 @@
 						<div class="item">
 							<div class="item-image-1">
 								<a class="img-link" href="#">
-									<img class="img-responsive img-full" src="img/index_800x400-image20.jpg" alt="">
+									<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image20.jpg" alt="">
 								</a>
 							</div>
 							<div class="item-content">
@@ -1802,7 +1802,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image36.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image36.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1814,7 +1814,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image37.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image37.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1826,7 +1826,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image38.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image38.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -1838,7 +1838,7 @@
 							<div class="item-block">
 								<div class="item-image">
 									<a class="img-link" href="#">
-										<img class="img-responsive img-full" src="img/index_800x400-image39.jpg" alt="">
+										<img class="img-responsive img-full" src="http://localhost/templates/24hNews/img/index_800x400-image39.jpg" alt="">
 									</a>
 								</div>
 								<div class="item-content">
@@ -2011,7 +2011,7 @@
 			<!-- Begin .gallery-slider owl-carousel -->
 			<div id="small-gallery-slider" class="owl-carousel">
 				<div class="small-gallery">
-					<img class="img-responsive" src="img/index_108x108_slider-image01.jpg" alt="">
+					<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_108x108_slider-image01.jpg" alt="">
 					<div class="post-content">
 						<a href="watch-live.html">Watch Live 24/7</a>
 						<p><a href="watch-live.html">What this generation's watching.</a></p>
@@ -2020,7 +2020,7 @@
 					</div>
 				</div>
 				<div class="small-gallery">
-					<img class="img-responsive" src="img/index_108x108_slider-image02.jpg" alt="">
+					<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_108x108_slider-image02.jpg" alt="">
 					<div class="post-content">
 						<a href="24-tv-radio.html">24 TV & Radio </a>
 						<p><a href="24-tv-radio.html">Sport station could follow 24h3 in going off air.</a></p>
@@ -2029,7 +2029,7 @@
 					</div>
 				</div>
 				<div class="small-gallery">
-					<img class="img-responsive" src="img/index_108x108_slider-image03.jpg" alt="">
+					<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_108x108_slider-image03.jpg" alt="">
 					<div class="post-content">
 						<a href="web-shows.html">Web Shows </a>
 						<p><a href="web-shows.html">Promoted Links From around the Web.</a></p>
@@ -2038,7 +2038,7 @@
 					</div>
 				</div>
 				<div class="small-gallery">
-					<img class="img-responsive" src="img/index_108x108_slider-image04.jpg" alt="">
+					<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_108x108_slider-image04.jpg" alt="">
 					<div class="post-content">
 						<a href="24-news-store.html">News Store </a>
 						<p><a href="24-news-store.html">Everything | Stories | Interactives | iReport |</a></p>
@@ -2047,7 +2047,7 @@
 					</div>
 				</div>
 				<div class="small-gallery">
-					<img class="img-responsive" src="img/index_108x108_slider-image05.jpg" alt="">
+					<img class="img-responsive" src="http://localhost/templates/24hNews/img/index_108x108_slider-image05.jpg" alt="">
 					<div class="post-content">
 						<a href="business.html">Business </a>
 						<p><a href="business.html">the Co.hired advisers at investment bank </a></p>
@@ -2061,7 +2061,7 @@
 			<!-- Begin .bottom-add-place-->
 			<div class="bottom-add-place">
 				<a href="https://themeforest.net/item/24h-news-broadcast-news-tv-channel-news-magazine-template/18614179" target="_blank">
-					<img src="img/banner_1248x100.jpg" alt="">
+					<img src="http://localhost/templates/24hNews/img/banner_1248x100.jpg" alt="">
 				</a>
 			</div>
 			<!-- End .bottom-add-place -->

@@ -14,8 +14,9 @@
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="description" content="24h News - Broadcast News TV Channel & News Magazine Template">
     <meta name="author" content="Via-Theme">
     <!-- Mobile Metas -->
@@ -43,73 +44,10 @@
     <div id="wrapper" data-color="red">
         <!--========== BEGIN #HEADER ==========-->
         <header id="header">
-            <!-- Begin .top-menu -->
-            <div class="top-menu" wp-site-content>
-                <!-- Begin .container -->
-                <div class="container">
-                    <!-- Begin .left-top-menu -->
-                    <ul class="left-top-menu">
-                        <li>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="youtube"> <i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="instagram"> <i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="address">
-                            <a href="#"><i class="fa fa-phone"></i> +00 (123) 456 7890</a>
-                        </li>
-                        <li class="address">
-                            <a href="#"><i class="fa fa-envelope-o"></i> info@domain.com</a>
-                        </li>
-                    </ul>
-                    <!-- End .left-top-menu -->
-                    <!-- Begin .right-top-menu -->
-                    <ul class="right-top-menu pull-right">
-                        <li class="contact">
-                            <a href="contact.html"><i class="fa fa-map-marker fa-i"></i></a>
-                        </li>
-                        <li class="about">
-                            <a href="about-us.html"><i class="fa fa-user fa-i"></i></a>
-                        </li>
-                        <li>
-                            <div class="search-container">
-                                <div class="search-icon-btn">
-                                    <span style="cursor:pointer"><i class="fa fa-search"></i></span>
-                                </div>
-                                <div class="search-input">
-                                    <input type="search" class="search-bar" placeholder="Search..." title="Search" />
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- End .right-top-menu -->
-                </div>
-                <!-- End .container -->
-            </div>
-            <!-- End .top-menu -->
+            <?php get_template_part('template-parts/header/menu', 'top'); ?>
             <!-- Begin .container -->
             <div class="container">
-                <!-- Begin .header-logo -->
-                <div class="header-logo">
-                    <a href="<?php echo home_url()?>">
-                        <img src="<?php echo get_bloginfo('logo') ?>" alt="Site Logo" />
-                        <h1><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h1>
-                        <h4><?php echo get_bloginfo('description')?></h4>
-                    </a>
-                </div>
-                <!-- End .header-logo -->
+                <?php get_template_part('template-parts/header/logo', 'header'); ?>
                 <!-- Begin .header-add-place -->
                 <div class="header-add-place">
                     <div class="desktop-add">
@@ -127,13 +65,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="sidenav-header-logo">
-                            <a href="index-2.html">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Site Logo" />
-                                <h2><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h2>
-                                <h5><?php echo get_bloginfo('description')?></h5>
-                            </a>
-                        </div>
+                        <?php get_template_part('template-parts/header/logo', 'sidenav'); ?>
                     </div>
                     <div class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
                         <button type="button" class="navbar-toggle active" data-toggle="collapse">
@@ -142,13 +74,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="sidenav-brand">
-                            <div class="sidenav-header-logo">
-                                <a href="index-2.html">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Site Logo" />
-                                    <h2><?php echo get_theme_mod(LOGO_TEXT_1_SETTING)?><span><?php echo get_theme_mod(LOGO_TEXT_2_SETTING)?></span></h2>
-                                    <h5><?php echo get_bloginfo('description')?></h5>
-                                </a>
-                            </div>
+                            <?php get_template_part('template-parts/header/logo', 'sidenav'); ?>
                         </div>
                         <ul class="sidenav-menu">
                             <li>
