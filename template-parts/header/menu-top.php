@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays header top menu
  *
@@ -11,33 +12,21 @@
     <!-- Begin .container -->
     <div class="container">
         <!-- Begin .left-top-menu -->
-        <ul class="left-top-menu">
-            <li>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="#" class="youtube"> <i class="fa fa-youtube"></i></a>
-            </li>
-            <li>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-            </li>
-            <li>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="#" class="instagram"> <i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="address">
-                <a href="#"><i class="fa fa-phone"></i> +00 (123) 456 7890</a>
-            </li>
-            <li class="address">
-                <a href="#"><i class="fa fa-envelope-o"></i> info@domain.com</a>
-            </li>
-        </ul>
+        <?php if (has_nav_menu('social')) : ?>
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'social',
+                    'menu_class'     => 'left-top-menu',
+                    //'link_before'    => '<i class="fa fa-',
+                    //'link_after'     => '"></i>',
+                    'depth'          => 1,
+                )
+            );
+            ?>
+        <?php endif ?>
         <!-- End .left-top-menu -->
+
         <!-- Begin .right-top-menu -->
         <ul class="right-top-menu pull-right">
             <li class="contact">

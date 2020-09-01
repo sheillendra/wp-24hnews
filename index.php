@@ -914,7 +914,7 @@
 					<!-- Begin .container-full-->
 					<div class="container-full bottom-text full-photo">
 						<div class="entry-media">
-							<div class="image" style="display: block; background-image: url(img/index_875x656.jpg);"></div>
+							<div class="image" style="display: block; background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/index_875x656.jpg);"></div>
 						</div>
 						<div class="content">
 							<h2><a href="#">Florida International Air Show</a></h2>
@@ -929,7 +929,7 @@
 					<!-- Begin .container-half -->
 					<div class="container-half">
 						<div class="entry-media">
-							<div class="image" style="background-image: url(img/index_800x600.jpg);">
+							<div class="image" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/img/index_800x600.jpg);">
 								<span><a class="label-1" href="#">World News</a></span>
 								<a href="video.html"><span class="play-icon"></span></a>
 							</div>
