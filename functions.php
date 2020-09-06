@@ -211,7 +211,7 @@ function auto_featured_image()
 	}
 }
 // Use it temporary to generate all featured images
-//add_action('the_post', 'auto_featured_image');
+add_action('the_post', 'auto_featured_image');
 // Used for new posts
 add_action('save_post', 'auto_featured_image');
 add_action('draft_to_publish', 'auto_featured_image');
