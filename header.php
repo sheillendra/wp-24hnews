@@ -99,7 +99,7 @@
                     <div class="container">
                         <!-- Begin .collapse navbar-collapse -->
                         <div class="collapse navbar-collapse nav-below-main">
-                        <?php get_template_part('template-parts/header/menu', 'second'); ?>
+                        <?php //get_template_part('template-parts/header/menu', 'second'); ?>
                         </div>
                         <!-- End .collapse navbar-collapse -->
                         <!-- Begin .clock -->

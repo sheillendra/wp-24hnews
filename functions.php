@@ -17,16 +17,16 @@ if (version_compare($GLOBALS['wp_version'], '4.7', '<')) {
 }
 
 
+const DEH_TEXT_DOMAIN = 'default';
+
 if (!function_exists('duaempath_news_setup')) {
 	function duaempath_news_setup()
 	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Twenty Nineteen, use a find and replace
-		 * to change 'twentynineteen' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('twentynineteen', get_template_directory() . '/languages');
+		load_theme_textdomain(DEH_TEXT_DOMAIN, get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -45,7 +45,11 @@ if (!function_exists('duaempath_news_setup')) {
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support('post-thumbnails');
-		set_post_thumbnail_size(1568, 9999);
+		add_image_size('duaempath-featured-image-thumbnail', 370, 185, true);
+		add_image_size('duaempath-featured-image-detail', 800, 400, true);
+		add_image_size('duaempath-featured-image-news_slider_1', 574, 443, true);
+		add_image_size('duaempath-featured-image-news_slider_2', 274, 442, true);
+		add_image_size('duaempath-featured-image-news_slider_3', 374, 215, true);
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
@@ -136,7 +140,7 @@ add_action('wp_enqueue_scripts', 'duaempath_news_frontend_scripts');
  */
 function duaempath_nav_menu_add_dropdown_toggle_class($atts, $item, $args, $depth)
 {
-	if (in_array('dropdown', $item->classes) && property_exists($args, 'submenu_toggle_class') ) {
+	if (in_array('dropdown', $item->classes) && property_exists($args, 'submenu_toggle_class')) {
 		$atts['class'] = $args->submenu_toggle_class;
 	}
 	return $atts;
@@ -157,3 +161,60 @@ require get_template_directory() . '/classes/class-duaempath-walker-nav-menu.php
  */
 //require get_template_directory() . '/inc/init.php';
 
+
+function auto_featured_image()
+{
+	global $post;
+	if (the_post_thumbnail('duaempath-featured-image-detail') === null) {
+
+		$attached_image = get_children("post_parent=$post->ID&amp;post_type=attachment&amp;post_mime_type=image&amp;numberposts=1");
+
+		if ($attached_image) {
+			foreach ($attached_image as $attachment_id => $attachment) {
+				set_post_thumbnail($post->ID, $attachment_id);
+				break;
+			}
+			var_dump($attached_image);
+		} else {
+			$matches = array();
+			$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
+			if (isset($matches[1]) && isset($matches[1][0])) {
+				$first_img = $matches[1][0];
+				//var_dump($first_img);
+				$pathinfo = pathinfo($first_img);
+				//var_dump($pathinfo);
+				$uploaddir = wp_upload_dir();
+				$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
+
+				$contents = file_get_contents($first_img);
+				$savefile = fopen($uploadfile, 'w');
+				fwrite($savefile, $contents);
+				fclose($savefile);
+
+				$wp_filetype = wp_check_filetype($pathinfo['basename'], null);
+				$attachment = array(
+					'post_mime_type' => $wp_filetype['type'],
+					'post_title' => $pathinfo['filename'],
+					'post_content' => '',
+					'post_status' => 'inherit',
+				);
+
+				$attach_id = wp_insert_attachment($attachment, $uploadfile);
+
+				$imagenew = get_post($attach_id);
+				$fullsizepath = get_attached_file($imagenew->ID);
+				$attach_data = wp_generate_attachment_metadata($attach_id, $fullsizepath); // wp_generate_attachment_metadata($attach_id, $fullsizepath);
+				wp_update_attachment_metadata($attach_id, $attach_data);
+				set_post_thumbnail($post->ID, $attach_id);
+			}
+		}
+	}
+}
+// Use it temporary to generate all featured images
+//add_action('the_post', 'auto_featured_image');
+// Used for new posts
+add_action('save_post', 'auto_featured_image');
+add_action('draft_to_publish', 'auto_featured_image');
+add_action('new_to_publish', 'auto_featured_image');
+add_action('pending_to_publish', 'auto_featured_image');
+add_action('future_to_publish', 'auto_featured_image');

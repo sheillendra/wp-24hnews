@@ -11,10 +11,11 @@
 <?php if (true) : ?>
     <div class="site-logo" style="border:1px solid">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-            <?php if (has_custom_logo()) :
+            <?php if (has_custom_logo()) : ?>
+                <?php
                 $custom_logo_id = get_theme_mod('custom_logo');
                 $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-            ?>
+                ?>
                 <img src="<?php echo esc_url($logo[0]) ?>" alt="Site Logo" style="width: unset;margin-top:15px;margin-right:0">
             <?php endif ?>
             <h2 style="margin:6px 0 0 0;font-size:25px"><strong style="font-family: Times New Roman; font-weight: bold; color:#d4000e">Tribrata<span style="color:#515252">News</span></strong></h2>
