@@ -174,38 +174,38 @@ function auto_featured_image()
 				set_post_thumbnail($post->ID, $attachment_id);
 				break;
 			}
-			var_dump($attached_image);
+			//var_dump($attached_image);
 		} else {
 			$matches = array();
 			$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
 			if (isset($matches[1]) && isset($matches[1][0])) {
 				$first_img = $matches[1][0];
-				//var_dump($first_img);
 				$pathinfo = pathinfo($first_img);
-				//var_dump($pathinfo);
+				var_dump($pathinfo);
 				$uploaddir = wp_upload_dir();
 				$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
 
-				$contents = file_get_contents($first_img);
-				$savefile = fopen($uploadfile, 'w');
-				fwrite($savefile, $contents);
-				fclose($savefile);
 
-				$wp_filetype = wp_check_filetype($pathinfo['basename'], null);
-				$attachment = array(
-					'post_mime_type' => $wp_filetype['type'],
-					'post_title' => $pathinfo['filename'],
-					'post_content' => '',
-					'post_status' => 'inherit',
-				);
+				// $contents = file_get_contents($first_img);
+				// $savefile = fopen($uploadfile, 'w');
+				// fwrite($savefile, $contents);
+				// fclose($savefile);
 
-				$attach_id = wp_insert_attachment($attachment, $uploadfile);
+				// $wp_filetype = wp_check_filetype($pathinfo['basename'], null);
+				// $attachment = array(
+				// 	'post_mime_type' => $wp_filetype['type'],
+				// 	'post_title' => $pathinfo['filename'],
+				// 	'post_content' => '',
+				// 	'post_status' => 'inherit',
+				// );
 
-				$imagenew = get_post($attach_id);
-				$fullsizepath = get_attached_file($imagenew->ID);
-				$attach_data = wp_generate_attachment_metadata($attach_id, $fullsizepath); // wp_generate_attachment_metadata($attach_id, $fullsizepath);
-				wp_update_attachment_metadata($attach_id, $attach_data);
-				set_post_thumbnail($post->ID, $attach_id);
+				// $attach_id = wp_insert_attachment($attachment, $uploadfile);
+
+				// $imagenew = get_post($attach_id);
+				// $fullsizepath = get_attached_file($imagenew->ID);
+				// $attach_data = wp_generate_attachment_metadata($attach_id, $fullsizepath); // wp_generate_attachment_metadata($attach_id, $fullsizepath);
+				// wp_update_attachment_metadata($attach_id, $attach_data);
+				// set_post_thumbnail($post->ID, $attach_id);
 			}
 		}
 	}
