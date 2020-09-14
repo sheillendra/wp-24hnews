@@ -21,30 +21,16 @@
                     </div>
                     <div class="entry-main">
                         <div class="entry-title">
-                            <h4 class="entry-title"><a href="#">Lorem ipsum dolor amt elit sed tempor incidunt</a></h4>
+                            <h4 class="entry-title"><a href="#"><?php the_title()?></a></h4>
                         </div>
 
                         <div class="post-meta-elements">
-                            <div class="post-meta-author"> <i class="fa fa-user"></i><a href="#">By Hugh Jackson</a> </div>
-                            <div class="post-meta-date"> <i class="fa fa-calendar"></i>Dec 25, 2016 </div>
+                            <div class="post-meta-author"> <i class="fa fa-user"></i><a href="#">By <?php the_author()?></a> </div>
+                            <div class="post-meta-date"> <i class="fa fa-calendar"></i><?php the_date()?> </div>
                             <div class="post-meta-comments"> <i class="fa fa-comment-o"></i><a href="#">23 Comments</a> </div>
                         </div>
                         <div class="entry-content">
-                            <p>Lorem ipsum dolor amet consectetur adipisicing elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enimad minim veniam quis nostruda exercitation ullamco laboris onsequat Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur.</p>
-                            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam remap riam eaque ipsa quae ab illo
-                                inventore veritatis et quasi architecto.</p>
-                            <div class="blockquote-wrapper">
-                                <blockquote class="blockquote blockquote_style01">
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore etual dolore magna aliqua Ut enim ad minim veniam quis.</h4>
-                                    <cite title="Blockquote Title"><span class="blockquote_author">James Cameroon</span></cite>
-                                </blockquote>
-                            </div>
-                            <p>Tempor incididunt labore et dolore magna aliqua enimad minim veniam sa quis nostruda exercitation ullamco laboris onsequat Lorem ipsum dolor tasit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <h3 class="title">nostrud sed exercitation dolore</h3>
-                            <p class="last">Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oc caecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim est laborum sedut persiciatis unde omnis iste natus
-                                error sit voluptatem accusantium doloremque.</p>
+                            <?php the_content()?>
                         </div>
                         <div class="news">
                             <!-- Begin .item -->
@@ -90,157 +76,7 @@
                     </div>
                 </div>
                 <!--  End .author-post -->
-                <!--  Begin .comment-section -->
-                <div class="comment-section">
-                    <!-- Begin .title-style01 -->
-                    <div class="comment-title title-style01">
-                        <h4>3 Comments</h4>
-                    </div>
-                    <!-- End .title-style01 -->
-                    <ul class="comments-list">
-                        <li>
-                            <div class="comment clearfix">
-                                <div class="avatar"><img src="img/avatar01.jpg" alt="avatar" class="img-responsive"></div>
-                                <div class="comment-content">
-                                    <div class="comment-title">
-                                        <h5 class="comment-author">Denise Barrett</h5>
-                                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                    </div>
-                                    <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incididunt labore dolore magna aliqu enimad min incididunt ut labore et dolore sed.</p>
-                                    <button type="button" class="comment-btn btn btn-default">reply</button>
-                                    <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <ul class="children">
-                                <li>
-                                    <div class="comment clearfix">
-                                        <div class="avatar"><img src="img/avatar02.jpg" alt="avatar" class="img-responsive"></div>
-                                        <div class="comment-content">
-                                            <div class="comment-title">
-                                                <h5 class="comment-author">Jesse Cole</h5>
-                                                <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                            </div>
-                                            <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incidid magna aliqu enimad min incididunt labore dolore sed.</p>
-                                            <button type="button" class="comment-btn btn btn-default">reply</button>
-                                            <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="comment clearfix">
-                                <div class="avatar"><img src="img/avatar03.jpg" alt="avatar" class="img-responsive"></div>
-                                <div class="comment-content">
-                                    <div class="comment-title">
-                                        <h5 class="comment-author">Timothy Tyler</h5>
-                                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                    </div>
-                                    <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incididunt labore dolore magna aliqu enimad min incididunt ut labore et dolore sed.</p>
-                                    <button type="button" class="comment-btn btn btn-default">reply</button>
-                                    <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="comment clearfix">
-                                <div class="avatar"><img src="img/avatar01.jpg" alt="avatar" class="img-responsive"></div>
-                                <div class="comment-content">
-                                    <div class="comment-title">
-                                        <h5 class="comment-author">Denise Barrett</h5>
-                                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                    </div>
-                                    <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incididunt labore dolore magna aliqu enimad min incididunt ut labore et dolore sed.</p>
-                                    <button type="button" class="comment-btn btn btn-default">reply</button>
-                                    <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <ul class="children">
-                                <li>
-                                    <div class="comment clearfix">
-                                        <div class="avatar"><img src="img/avatar02.jpg" alt="avatar" class="img-responsive"></div>
-                                        <div class="comment-content">
-                                            <div class="comment-title">
-                                                <h5 class="comment-author">Jesse Cole</h5>
-                                                <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                            </div>
-                                            <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incidid magna aliqu enimad min incididunt labore dolore sed.</p>
-                                            <button type="button" class="comment-btn btn btn-default">reply</button>
-                                            <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                        </div>
-                                    </div>
-                                    <ul class="children">
-                                        <li>
-                                            <div class="comment clearfix">
-                                                <div class="avatar"><img src="img/avatar01.jpg" alt="avatar" class="img-responsive"></div>
-                                                <div class="comment-content">
-                                                    <div class="comment-title">
-                                                        <h5 class="comment-author">Denise Barrett</h5>
-                                                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                                    </div>
-                                                    <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incididunt labore dolore magna aliqu enimad min incididunt ut labore et dolore sed.</p>
-                                                    <button type="button" class="comment-btn btn btn-default">reply</button>
-                                                    <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="comment clearfix">
-                                <div class="avatar"><img src="img/avatar03.jpg" alt="avatar" class="img-responsive"></div>
-                                <div class="comment-content">
-                                    <div class="comment-title">
-                                        <h5 class="comment-author">Timothy Tyler</h5>
-                                        <div class="comment-date"><i class="fa fa-calendar"></i><span class="day"> Dec 25, 2016</span></div>
-                                    </div>
-                                    <p>Lorem ipsum dolor amet consectetur adipisic elit eiusmod tempor incididunt labore dolore magna aliqu enimad min incididunt ut labore et dolore sed.</p>
-                                    <button type="button" class="comment-btn btn btn-default">reply</button>
-                                    <button type="button" class="comment-btn btn btn-primary">edit</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--  End .comment-section -->
-                <!--  Begin .form-reply-section -->
-
-                <div class="form-reply-section">
-                    <div class="comment-title title-style01">
-                        <h4>leave a reply</h4>
-                    </div>
-                    <form class="form-reply ui-form" action="#" method="post">
-                        <div class="row no-gutter">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input placeholder="Your Name" class="form-control" type="text" title="Reply" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <input placeholder="Email" class="form-control" type="email" title="Email" />
-                            </div>
-                        </div>
-                        <div class="row no-gutter">
-                            <div class="col-md-12">
-                                <textarea rows="5" placeholder="Comment" class="form-control" title="Comment"></textarea>
-                            </div>
-                        </div>
-                        <div class="row no-gutter">
-                            <div class="col-md-12">
-                                <button class="btn btn-primary btn-black">submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!--  End .form-reply-section -->
+                <?php comments_template()?>
             </div>
             <!--========== END .COL-MD-8 ==========-->
             <!--========== BEGIN .COL-MD-4==========-->

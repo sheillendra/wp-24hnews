@@ -146,6 +146,13 @@ function duaempath_nav_menu_add_dropdown_toggle_class($atts, $item, $args, $dept
 	return $atts;
 }
 add_filter('nav_menu_link_attributes', 'duaempath_nav_menu_add_dropdown_toggle_class', 10, 4);
+
+require get_template_directory() . '/inc/template-tags.php';
+
+// Handle SVG icons.
+require get_template_directory() . '/inc/svg-icons.php';
+require get_template_directory() . '/classes/class-duaempath-svg-icons.php';
+
 /**
  * Customizer additions.
  */
@@ -156,6 +163,9 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/classes/class-duaempath-walker-nav-menu.php';
 
+// Custom comment walker.
+require get_template_directory() . '/classes/class-duaempath-walker-comment.php';
+
 /**
  * Customizer additions.
  */
@@ -163,6 +173,18 @@ require get_template_directory() . '/classes/class-duaempath-walker-nav-menu.php
 
 
 function auto_featured_image()
+{
+	global $post;
+	$thumb_id = get_post_thumbnail_id($post);
+	if ($thumb_id) {
+		if (wp_get_attachment_image($thumb_id, 'duaempath-featured-image-detail') === '') {
+			echo $thumb_id;
+			set_post_thumbnail($post->ID, $thumb_id);
+		}
+	}
+}
+
+function _auto_featured_image()
 {
 	global $post;
 	if (the_post_thumbnail('duaempath-featured-image-detail') === null) {
@@ -178,18 +200,24 @@ function auto_featured_image()
 		} else {
 			$matches = array();
 			$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
+			//print_r($matches[1]);
 			if (isset($matches[1]) && isset($matches[1][0])) {
+				$uploaddir = wp_upload_dir();
 				$first_img = $matches[1][0];
 				$pathinfo = pathinfo($first_img);
-				var_dump($pathinfo);
-				$uploaddir = wp_upload_dir();
 				$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
+				//var_dump($pathinfo);
+				// try {
+				// 	$contents = file_get_contents($first_img);
+				// 	$savefile = fopen($uploadfile, 'w');
+				// 	fwrite($savefile, $contents);
+				// 	fclose($savefile);
+				// } catch (\Exception $e) {
+				// 	$first_img = $matches[1][0];
+				// 	$pathinfo = pathinfo($first_img);
+				// 	$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
+				// }
 
-
-				// $contents = file_get_contents($first_img);
-				// $savefile = fopen($uploadfile, 'w');
-				// fwrite($savefile, $contents);
-				// fclose($savefile);
 
 				// $wp_filetype = wp_check_filetype($pathinfo['basename'], null);
 				// $attachment = array(
@@ -218,3 +246,10 @@ add_action('draft_to_publish', 'auto_featured_image');
 add_action('new_to_publish', 'auto_featured_image');
 add_action('pending_to_publish', 'auto_featured_image');
 add_action('future_to_publish', 'auto_featured_image');
+
+
+function duaempath_comment_reply_link($link, $args = array(), $comment = null, $post = null)
+{
+	return '<i style="font-size:12px">' . $link . '</i>';
+}
+add_filter('comment_reply_link', 'duaempath_comment_reply_link');
