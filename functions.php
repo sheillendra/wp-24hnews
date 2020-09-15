@@ -222,11 +222,11 @@ function auto_featured_image()
 // Use it temporary to generate all featured images
 add_action('the_post', 'auto_featured_image');
 // Used for new posts
-add_action('save_post', 'auto_featured_image');
-add_action('draft_to_publish', 'auto_featured_image');
-add_action('new_to_publish', 'auto_featured_image');
-add_action('pending_to_publish', 'auto_featured_image');
-add_action('future_to_publish', 'auto_featured_image');
+// add_action('save_post', 'auto_featured_image');
+// add_action('draft_to_publish', 'auto_featured_image');
+// add_action('new_to_publish', 'auto_featured_image');
+// add_action('pending_to_publish', 'auto_featured_image');
+// add_action('future_to_publish', 'auto_featured_image');
 
 
 function duaempath_comment_reply_link($link, $args = array(), $comment = null, $post = null)
