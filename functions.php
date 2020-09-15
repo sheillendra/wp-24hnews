@@ -19,6 +19,8 @@ if (version_compare($GLOBALS['wp_version'], '4.7', '<')) {
 
 const DEH_TEXT_DOMAIN = 'default';
 
+include_once(ABSPATH . 'wp-admin/includes/image.php');
+
 if (!function_exists('duaempath_news_setup')) {
 	function duaempath_news_setup()
 	{
@@ -175,69 +177,48 @@ require get_template_directory() . '/classes/class-duaempath-walker-comment.php'
 function auto_featured_image()
 {
 	global $post;
-	$thumb_id = get_post_thumbnail_id($post);
-	if ($thumb_id) {
-		if (wp_get_attachment_image($thumb_id, 'duaempath-featured-image-detail') === '') {
-			echo $thumb_id;
-			set_post_thumbnail($post->ID, $thumb_id);
-		}
-	}
-}
-
-function _auto_featured_image()
-{
-	global $post;
-	if (the_post_thumbnail('duaempath-featured-image-detail') === null) {
-
-		$attached_image = get_children("post_parent=$post->ID&amp;post_type=attachment&amp;post_mime_type=image&amp;numberposts=1");
-
-		if ($attached_image) {
-			foreach ($attached_image as $attachment_id => $attachment) {
+	$attached_image = get_children("post_parent=$post->ID&amp;post_type=attachment&amp;post_mime_type=image&amp;numberposts=1");
+	if ($attached_image) {
+		foreach ($attached_image as $attachment_id => $attachment) {
+			if (wp_get_attachment_image($attachment_id, 'duaempath-featured-image-detail') === '') {
+				//echo $attachment_id;
 				set_post_thumbnail($post->ID, $attachment_id);
-				break;
 			}
-			//var_dump($attached_image);
-		} else {
-			$matches = array();
-			$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
-			//print_r($matches[1]);
-			if (isset($matches[1]) && isset($matches[1][0])) {
+		}
+	} else {
+		$matches = array();
+		$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
+		if (isset($matches[1]) && isset($matches[1][0])) {
+			$firstImg = $matches[1][0];
+			$oldImgPath = str_replace('https://tribratanews.gorontalo.polri.go.id/', '../', $firstImg);
+			if (file_exists($oldImgPath)) {
 				$uploaddir = wp_upload_dir();
-				$first_img = $matches[1][0];
-				$pathinfo = pathinfo($first_img);
+				$pathinfo = pathinfo($firstImg);
 				$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
-				//var_dump($pathinfo);
-				// try {
-				// 	$contents = file_get_contents($first_img);
-				// 	$savefile = fopen($uploadfile, 'w');
-				// 	fwrite($savefile, $contents);
-				// 	fclose($savefile);
-				// } catch (\Exception $e) {
-				// 	$first_img = $matches[1][0];
-				// 	$pathinfo = pathinfo($first_img);
-				// 	$uploadfile = $uploaddir['path'] . '/' . $pathinfo['basename'];
-				// }
+				copy($oldImgPath, $uploadfile);
 
+				$wp_filetype = wp_check_filetype($pathinfo['basename'], null);
+				$attachment = array(
+					'post_mime_type' => $wp_filetype['type'],
+					'post_title' => $pathinfo['filename'],
+					'post_content' => '',
+					'post_status' => 'inherit',
+				);
 
-				// $wp_filetype = wp_check_filetype($pathinfo['basename'], null);
-				// $attachment = array(
-				// 	'post_mime_type' => $wp_filetype['type'],
-				// 	'post_title' => $pathinfo['filename'],
-				// 	'post_content' => '',
-				// 	'post_status' => 'inherit',
-				// );
+				$attach_id = wp_insert_attachment($attachment, $uploadfile);
 
-				// $attach_id = wp_insert_attachment($attachment, $uploadfile);
-
-				// $imagenew = get_post($attach_id);
-				// $fullsizepath = get_attached_file($imagenew->ID);
-				// $attach_data = wp_generate_attachment_metadata($attach_id, $fullsizepath); // wp_generate_attachment_metadata($attach_id, $fullsizepath);
-				// wp_update_attachment_metadata($attach_id, $attach_data);
-				// set_post_thumbnail($post->ID, $attach_id);
+				$imagenew = get_post($attach_id);
+				$fullsizepath = get_attached_file($imagenew->ID);
+				$attach_data = wp_generate_attachment_metadata($attach_id, $fullsizepath); // wp_generate_attachment_metadata($attach_id, $fullsizepath);
+				wp_update_attachment_metadata($attach_id, $attach_data);
+				set_post_thumbnail($post->ID, $attach_id);
+				$post->post_content = str_replace($matches[0][0], '', $post->post_content);
+				wp_update_post($post);
 			}
 		}
 	}
 }
+
 // Use it temporary to generate all featured images
 add_action('the_post', 'auto_featured_image');
 // Used for new posts

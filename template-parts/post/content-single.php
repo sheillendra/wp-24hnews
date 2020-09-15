@@ -1,13 +1,7 @@
 <!--========== BEGIN .MODULE ==========-->
 <section class="module">
     <div class="container">
-        <!--========== BEGIN .BREAKING-NEWS ==========-->
-        <!-- Begin .outer -->
-        <div class="outer">
         <?php get_template_part('template-parts/section/breaking_news'); ?>
-        </div>
-        <!-- End .outer -->
-        <!--========== END .BREAKING-NEWS ==========-->
         <!--========== BEGIN .ROW ==========-->
         <div class="row no-gutter">
             <!--========== BEGIN .COL-MD-8 ==========-->
@@ -21,16 +15,16 @@
                     </div>
                     <div class="entry-main">
                         <div class="entry-title">
-                            <h4 class="entry-title"><a href="#"><?php the_title()?></a></h4>
+                            <h4 class="entry-title"><a href="#"><?php the_title() ?></a></h4>
                         </div>
 
                         <div class="post-meta-elements">
-                            <div class="post-meta-author"> <i class="fa fa-user"></i><a href="#">By <?php the_author()?></a> </div>
-                            <div class="post-meta-date"> <i class="fa fa-calendar"></i><?php the_date()?> </div>
+                            <div class="post-meta-author"> <i class="fa fa-user"></i><a href="#">By <?php the_author() ?></a> </div>
+                            <div class="post-meta-date"> <i class="fa fa-calendar"></i><?php the_date() ?> </div>
                             <div class="post-meta-comments"> <i class="fa fa-comment-o"></i><a href="#">23 Comments</a> </div>
                         </div>
                         <div class="entry-content">
-                            <?php the_content()?>
+                            <?php the_content() ?>
                         </div>
                         <div class="news">
                             <!-- Begin .item -->
@@ -76,7 +70,7 @@
                     </div>
                 </div>
                 <!--  End .author-post -->
-                <?php comments_template()?>
+                <?php comments_template() ?>
             </div>
             <!--========== END .COL-MD-8 ==========-->
             <!--========== BEGIN .COL-MD-4==========-->
