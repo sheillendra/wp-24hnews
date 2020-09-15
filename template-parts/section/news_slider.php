@@ -16,7 +16,7 @@ $sizeCounter = array(0 => '1', 1 => '2', 2 => '3', 3 => '3');
                         <span class="category-tag bg-1">Around the World</span>
                         <p>New global rules on firms' tax disclosure urged by economists</p>
                     </div>
-                    <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter]) ?>
+                    <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter], array('style' => 'width: 100%')) ?>
                 </a>
             </div>
         <?php

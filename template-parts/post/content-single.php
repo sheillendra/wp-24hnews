@@ -10,7 +10,7 @@
                 <div class="post post-full clearfix">
                     <div class="entry-media">
                         <a href="#">
-                            <?php the_post_thumbnail('duaempath-featured-image-detail', array('class' => 'img-responsive')); ?>
+                            <?php the_post_thumbnail('duaempath-featured-image-detail', array('class' => 'img-responsive', 'style' => 'width: 100%')); ?>
                         </a>
                     </div>
                     <div class="entry-main">
