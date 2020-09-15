@@ -2,6 +2,7 @@
 $headlines = get_posts(array('category_name' => 'headline'));
 $classCounter = array(0 => 'first', 1 => 'second', 2 => 'third', 3 => 'fourth');
 $sizeCounter = array(0 => '1', 1 => '2', 2 => '3', 3 => '3');
+$fullCounter = array(0 => 'width', 1 => 'height', 2 => 'width', 3 => 'width');
 ?>
 <!--========== BEGIN #NEWS-SLIDER ==========-->
 <div id="news-slider" class="owl-carousel">
@@ -16,7 +17,7 @@ $sizeCounter = array(0 => '1', 1 => '2', 2 => '3', 3 => '3');
                         <span class="category-tag bg-1">Around the World</span>
                         <p>New global rules on firms' tax disclosure urged by economists</p>
                     </div>
-                    <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter], array('style' => 'width: 100%')) ?>
+                    <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter], array('style' => $fullCounter[$counter] . ': 100%')) ?>
                 </a>
             </div>
         <?php
