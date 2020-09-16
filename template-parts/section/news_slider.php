@@ -6,28 +6,36 @@ $fullCounter = array(0 => 'width', 1 => 'height', 2 => 'width', 3 => 'width');
 ?>
 <!--========== BEGIN #NEWS-SLIDER ==========-->
 <div id="news-slider" class="owl-carousel">
-    <div class="news-slide">
-        <?php
-        $counter = 0;
-        foreach ($headlines as $k => $headline) :
-        ?>
-            <div class="news-slider-layer <?php echo $classCounter[$counter] ?>">
-                <a href="news.html" target="_blank">
-                    <div class="content">
-                        <span class="category-tag bg-1">Around the World</span>
-                        <p>New global rules on firms' tax disclosure urged by economists</p>
-                    </div>
-                    <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter], array('style' => $fullCounter[$counter] . ': 100%')) ?>
-                </a>
-            </div>
-        <?php
-            if ($counter === 3) {
-                $counter = 0;
-            } else {
-                $counter++;
-            }
-        endforeach; ?>
-        <!-- 
+
+    <?php
+    $counter = 0;
+    foreach ($headlines as $k => $headline) :
+        if ($counter === 0) {
+            echo '<div class="news-slide">';
+        }
+    ?>
+        <div class="news-slider-layer <?php echo $classCounter[$counter] ?>">
+            <a href="news.html" target="_blank">
+                <div class="content">
+                    <span class="category-tag bg-1">Around the World</span>
+                    <p>New global rules on firms' tax disclosure urged by economists</p>
+                </div>
+                <?php echo get_the_post_thumbnail($headline->ID, 'duaempath-featured-image-news_slider_' . $sizeCounter[$counter], array('style' => $fullCounter[$counter] . ': 100%')) ?>
+            </a>
+        </div>
+    <?php
+        if ($counter === 3) {
+            echo '</div>';
+            $counter = 0;
+        } else {
+            $counter++;
+        }
+    endforeach;
+    if ($counter > 0) {
+        echo '</div>';
+    }
+    ?>
+    <!-- 
         <div class="news-slider-layer second">
             <a href="politics.html" target="_blank">
                 <div class="content">
@@ -130,7 +138,7 @@ $fullCounter = array(0 => 'width', 1 => 'height', 2 => 'width', 3 => 'width');
                 </div>
                 <img src="http://localhost/templates/24hNews/img/index_slider-image12.jpg" alt="">
             </a>
-        </div> -->
-    </div>
+        </div>
+    </div> -->
 </div>
 <!--========== END .NEWS-SLIDER ==========-->
